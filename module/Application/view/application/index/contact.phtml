@@ -1,2 +1,37 @@
 <?php
-echo 'Anna\'s first Laminas page';
+
+declare(strict_types=1);
+/**
+ * @var Laminas\View\Renderer\PhpRenderer $this
+ */
+$this->headTitle($this->title);
+?>
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <div class="contact-container">
+        <dv class="contact-info">
+            <div class="contact-header">
+                <h3>CONTACT US</h3>
+            </div>
+            <div class="contact-flex">
+                <i class="fa-solid fa-phone"></i>
+                <h4>+995-599-060-235</h4>
+            </div>
+            <div class="contact-flex">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>annageld508@gmail.com</h4>
+            </div>
+            <div class="contact-flex">
+                <i class="fa-solid fa-location-pin"></i>
+                <h4>Tbilisi,Georgia</h4>
+            </div>
+        </dv>
+        <div class="contact-icons">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+    </div>
+</section>

@@ -7,8 +7,38 @@ namespace Application;
 use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Segment;
 use Laminas\ServiceManager\Factory\InvokableFactory;
+use Laminas\Mvc\Controller\LazyControllerAbstractFactory as ControllerFactory;
 
 return [
+    'app_data' => [
+        'services' => [
+            [
+                'item'     => 'Range Fee',
+                'duration' => '1 Hour',
+                'cost'     => '25',
+            ],
+            [
+                'item'     => 'Recurve Shooting Experience',
+                'duration' => '1 Hour',
+                'cost'     => '30',
+            ],
+            [
+                'item'     => 'Private Lesson',
+                'duration' => '1 Hour',
+                'cost'     => '1 Hour',
+            ],
+            [
+                'item'     => 'Monthly Membership',
+                'duration' => '1 Month',
+                'cost'     => '110',
+            ],
+            [
+                'item'     => 'Yearly Membership',
+                'duration' => '1 Year',
+                'cost'     => '800',
+            ],
+        ],
+    ],
     'router' => [
         'routes' => [
             'home' => [
@@ -38,7 +68,7 @@ return [
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class,
+            Controller\IndexController::class => ControllerFactory::class,
         ],
     ],
     'view_manager' => [

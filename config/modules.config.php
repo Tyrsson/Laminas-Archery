@@ -19,7 +19,6 @@ return [
     'Laminas\InputFilter',
     'Laminas\Filter',
     'Laminas\Hydrator',
-    'Laminas\Di',
     'Laminas\Db',
     'Laminas\Router',
     'Laminas\Validator',

@@ -1,0 +1,64 @@
+<?php
+
+declare(strict_types=1);
+/**
+ * @var Laminas\View\Renderer\PhpRenderer $this
+ */
+$this->headTitle($this->title);
+?>
+<!--  BOOK NOW POPUP -->
+<div class="popup">
+    <div class="popup-content">
+        <i class="fa-solid fa-xmark close" id="close"></i>
+        <div class="main-popup">
+            <form method="get">
+                <div>
+                    <label for="name">Your Full Name</label>
+                    <input type="text" name="name" placeholder="Write Your Name" required />
+                </div>
+                <div>
+                    <label for="name">Your Email Adress</label>
+                    <input type="text" name="name" placeholder="Write Your Email" required />
+                </div>
+                <div>
+                    <label for="name">How Many Lane?</label>
+                    <select name="people" id="people">
+                        <option value="">---Lane---</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="time">What Time?</label>
+                    <select name="time" id="time">
+                        <option value="">---Time---</option>
+                        <option value="2">12PM</option>
+                        <option value="3">1PM</option>
+                        <option value="4">2PM</option>
+                        <option value="5">3PM</option>
+                        <option value="5">4PM</option>
+                        <option value="5">5PM</option>
+                        <option value="5">6PM</option>
+                        <option value="5">7PM</option>
+                        <option value="5">8PM</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">What Is The Date?</label>
+                    <input id="date" type="date" name="date" placeholder="Date" required />
+                </div>
+                <div>
+                    <label for="name">Your Phone Number</label>
+                    <input id="number" type="text" name="number" placeholder="Write Your Number Here" required />
+                </div>
+                <div class="submit">
+                    <input type="submit" name="submit" value="BOOK NOW" id="submit" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- END OF POPUP -->
